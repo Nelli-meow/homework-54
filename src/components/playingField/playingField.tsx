@@ -3,26 +3,26 @@ import './playingField.css';
 import {useState} from "react";
 
 
-const getField = () => {
-    const field = [];
+const createItems = () => {
+    const Items = [];
 
     for (let i: number = 0; i < 36; i++) {
-        field.push({
+        Items.push({
             hasItem: false,
             clicked: false,
         });
     }
 
     const randomIndex = Math.floor(Math.random() * 36);
-    field[randomIndex].hasItem = true;
+    Items[randomIndex].hasItem = true;
 
-    return field;
+    return Items;
 
 }
 
 const PlayingField: React.FC = () => {
 
-    const [items, setItems] = useState(getField());
+    const [items, setItems] = useState(createItems())
 
     return (
         <div className="playing-field">
