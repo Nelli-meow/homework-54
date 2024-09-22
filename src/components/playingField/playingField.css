@@ -1,0 +1,6 @@
+.playing-field {
+    border: 2px solid dimgray;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 100px;
+}

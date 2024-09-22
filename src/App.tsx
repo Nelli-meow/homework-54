@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import PlayingField from './components/playingField/playingField.tsx';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
-
+      <PlayingField/>
     </>
   )
-}
+};
 
 export default App
