@@ -1,6 +1,13 @@
 .playing-field {
-    border: 2px solid dimgray;
-    max-width: 500px;
-    max-height: 500px;
-    padding: 100px;
+    padding: 20px;
+    width: 353px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block {
+    border: 1px solid dimgray;
+    min-height: 410px;
 }
